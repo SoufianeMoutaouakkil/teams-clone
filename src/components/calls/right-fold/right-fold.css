@@ -1,5 +1,5 @@
 .rightFold-heading {
-padding: 12px 0;
+padding: 0 0 12px;
 border-bottom: 2px solid var(--teams-gray-light);
 }
 
@@ -58,4 +58,5 @@ border-bottom: 2px solid var(--teams-gray-light);
     flex-wrap: wrap;
     overflow: scroll;
     justify-content: flex-start;
+    gap: 16px;
 }

@@ -1,5 +1,4 @@
 import { BiBell, BiMessageRoundedDetail, BiPhone } from "react-icons/bi";
-import { SlOptions } from "react-icons/sl";
 
 export const SidebarData = [
     {

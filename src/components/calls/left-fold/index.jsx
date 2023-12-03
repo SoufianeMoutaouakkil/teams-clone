@@ -9,25 +9,27 @@ function LeftFold() {
     const dialer = DialerList;
     return (
         <div className="leftFold">
-            <label className="teams-title">Calls</label>
-            <div className="leftFold-menu">
-                <div className="menu-items">
-                    {menu.map((item) => {
-                        return <MenuItem item={item} />
-                    })}
-                </div>
-            </div>
-            <div className="leftFold-dialer">
-                <label className="dialer-label" >Make a call</label>
-                <div className="dialer-search">
-                    <input type="text" placeholder="Type a name" />
-                </div>
-                <div className="dialer-suggested">
-                    <label className="suggested-label" >Suggested</label>
-                    <div className="suggested-list" >
-                        {dialer.map((item) => {
-                            return <DialerItem item={item} />
+            <div className="fold-title">Calls</div>
+            <div className="fold-main">
+                <div className="leftFold-menu">
+                    <div className="menu-items">
+                        {menu.map((item) => {
+                            return <MenuItem item={item} />
                         })}
+                    </div>
+                </div>
+                <div className="leftFold-dialer">
+                    <label className="dialer-label" >Make a call</label>
+                    <div className="dialer-search">
+                        <input type="text" placeholder="Type a name" />
+                    </div>
+                    <div className="dialer-suggested">
+                        <label className="suggested-label" >Suggested</label>
+                        <div className="suggested-list" >
+                            {dialer.map((item) => {
+                                return <DialerItem item={item} />
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>
